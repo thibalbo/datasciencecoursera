@@ -11,9 +11,9 @@ The final data is stored in the `Tidy` data frame object. It contains 81
 variables and 10299 observations (128.8 kB). The following variables are
 available:
 
-1. subject: the person who performed the activity
-2. activity: the type of the activity  
-3:81. ~: signals captured by the smartphone  
+* 1. subject: the person who performed the activity
+* 2. activity: the type of the activity  
+* 3:81. ~: signals captured by the smartphone  
 
 
 
