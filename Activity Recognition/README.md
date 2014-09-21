@@ -23,7 +23,7 @@ cutoff frequency was used. From each window, a vector of features was obtained
 by calculating variables from the time and frequency domain.
 
 The objective of the project was to get the data collect from the smartphones
-and preprocess the data in order to get a tidy data set for further analysis.
+and preprocess the data in order to get a tidy data set for further analysis.  
 
 
 
@@ -31,11 +31,12 @@ and preprocess the data in order to get a tidy data set for further analysis.
 
 The data used on this script can be found in the following link:
 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
 
 
 
 ## Further resources
 
+[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)  
+
 [Data Science Activity Tracking and the Battle for the World's Top Sports Brand](http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/)
-[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)

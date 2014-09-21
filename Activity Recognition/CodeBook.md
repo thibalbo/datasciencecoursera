@@ -1,7 +1,7 @@
 ## Intro
 All the getting and cleaning are made through the activityReco.R script. It
-first downloads the data provided (and stores it in a folder called Coursera2 in
-the C directory) and then starts the pre-processing. It requires the `plyr`
+first downloads the data provided (and stores it in a folder called `Coursera2`
+in the `C` directory) and then starts the pre-processing. It requires the `plyr`
 library. You can run it all at once.
 
 
@@ -12,13 +12,13 @@ variables and 10299 observations (128.8 kB). The following variables are
 available:
 
 1. subject: the person who performed the activity
-2. activity: the type of the activity
-3:81. ~: signals captured by the smartphone
+2. activity: the type of the activity  
+3:81. ~: signals captured by the smartphone  
 
 
 
 ## Subject Labels
-Subjects are numbered from 1 to 30.
+Subjects are numbered from 1 to 30.  
 
 
 
@@ -28,7 +28,7 @@ Subjects are numbered from 1 to 30.
 3. WALKING_DOWNSTAIRS
 4. SITTING
 5. STANDING
-6. LAYING
+6. LAYING  
 
 
 ## Measures Labels
