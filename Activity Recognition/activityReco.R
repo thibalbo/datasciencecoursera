@@ -8,9 +8,7 @@ setwd(path)
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
               destfile= paste(path, filename, sep= ""))
 unzip(filename)
-#setwd("C:/Coursera/getting_and_cleaning_data/course_project/UCI HAR Dataset")
 setwd("./UCI HAR Dataset")
-getwd()
 
 
 ## Read the data
@@ -38,10 +36,13 @@ X_test <- cbind(subject_test, y_test, X_test)
 
 ## 1. Merges the training and the test sets to create one data set and label the variables
 data <- rbind(X_train, X_test)
-colnames(data) <- c("subject", "id_activity", as.character(features$name)) ## 4.
 
 
-## Extracts only the measurements on the mean and standard deviation for each measurement
+## 4. Appropriately labels the data set with descriptive variable names
+colnames(data) <- c("subject", "id_activity", as.character(features$name))
+
+
+## 2. Extracts only the measurements on the mean and standard deviation for each measurement
 indx <- grep("mean()|std()", names(data))
 data <- data[,c(1,2,indx)]
 
@@ -58,5 +59,5 @@ Tidy <- ddply(data, c("subject", "activity"),
 
 
 ## Clean the Environment
-rm(X_train, X_test, activity_labels, features, subject_test, subject_train, y_test, y_train, indx)
-
+rm(X_train, X_test, activity_labels, features, subject_test,
+   subject_train, y_test, y_train, indx, data, filename, path)
